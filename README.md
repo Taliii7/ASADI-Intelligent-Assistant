@@ -1,44 +1,45 @@
-# ASADI
+# 🤖 ASADI: Intelligent Administrative Assistant (RAG)
 
-## À propos du projet
-ASADI est une application Django utilisant un système RAG avec ChromaDB et un LLM. Elle permet aux utilisateurs de filtrer les contextes lors des requêtes au LLM à travers une fonctionnalité de sélection de workspace.
+> An intelligent chatbot powered by **Django** and **RAG (Retrieval-Augmented Generation)** designed to query administrative and legal documents with precise context management.
 
-## Gestion de version
-Ce projet est versionné simultanément avec :
-- **SVN** : Système de versionnage principal
-- **GitHub** : Système de versionnage secondaire
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
+[![Django](https://img.shields.io/badge/Django-Framework-green)](https://www.djangoproject.com/)
+[![RAG](https://img.shields.io/badge/AI-RAG%20%26%20LLM-orange)]()
 
-Cette double gestion de version permet de bénéficier des avantages des deux systèmes :
-- SVN pour la compatibilité avec les processus existants
-- GitHub pour la collaboration, les pull requests et l'intégration avec d'autres outils
+## 📄 Project Documentation
+For a deep dive into the architecture, the algorithms used, and the detailed results, please refer to our technical report:
 
-## Installation et configuration
+👉 **[Read the Full Technical Report (PDF)](./documentation/nom_du_rapport.pdf)**
 
-### Prérequis
-- Python 3.8+
-- Django
-- Autres dépendances listées dans `requirements.txt`
+---
 
-### Installation
-```bash
-# Créer un environnement virtuel
-python -m venv venv
-source venv/bin/activate  # Sur Windows: venv\Scripts\activate
+## 🚀 About The Project
+ASADI is a full-stack application that leverages **Large Language Models (LLMs)** and **ChromaDB** (Vector Database) to assist users in navigating complex documentation.
 
-# Installer les dépendances
-pip install -r requirements.txt
+**Key Features:**
+* **RAG Architecture:** Retreives relevant context from indexed documents to ground LLM answers (reducing hallucinations).
+* **Workspace Filtering:** Users can create specific workspaces to restrict the AI's search scope to a subset of documents.
+* **Dual Version Control:** Synchronized environment bridging legacy SVN workflows with modern GitHub collaboration features.
 
-# Configurer l'environnement
-# Copier .env.example en .env et modifier selon vos besoins
+## 👥 Team & Credits
+This project was developed as part of the Computer Science curriculum at **Université Paris Cité**.
 
-# Lancer le serveur de développement
-python manage.py runserver
-```
+- [**Ali Traore**](https://github.com/Taliii7)
+- [**Valentin Ponoussamy**](https://github.com/Yvngval)
+- [**Thomas Gourmelen**](https://github.com/thmsgo18)
+- [**Abdel Malik Djaffer**](https://github.com/malik439)
 
-## Structure du projet
-- **ASADI/** : Application principale Django
-- **documents/** : Gestion des documents
-- **prompts/** : Gestion des prompts pour le LLM
-- **scenario/** : Fonctionnalités liées aux scénarios
-- **utilisateurs/** : Gestion des utilisateurs
-- **workspace/** : Gestion des workspaces pour filtrer les contextes
+---
+## 🛠 Project Structure
+
+The repository is organized as follows:
+
+```text
+ASADI/
+├── ASADI/          # Main Django Application logic
+├── documents/      # Document ingestion pipeline & storage
+├── documentation/  # Technical reports and project deliverables 📄
+├── prompts/        # LLM Prompt Engineering & Templates
+├── scenario/       # Pedagogical scenario generation logic
+├── utilisateurs/   # User management & Authentication
+└── workspace/      # Context filtering & Workspace logic
