@@ -9,7 +9,7 @@
 ## 📄 Project Documentation
 For a deep dive into the architecture, the algorithms used, and the detailed results, please refer to our technical report:
 
-👉 **[Read the Full Technical Report (PDF)](./documentation/Rapport final.pdf)**
+👉 **[Read the Full Technical Report (PDF)](./documentation/Rapport_final.pdf)**
 
 ---
 
